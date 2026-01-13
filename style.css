@@ -1,0 +1,31 @@
+:root{
+  --bg-color:#080808;
+  --card-bg:#111111;
+  --border-color:#2a2a2a;
+  --primary-color:#e2b714;
+  --text-color:#ffffff;
+  --secondary-color:#a0aa0a0;
+}
+
+*{ box-sizing :border-box; margin:0; padding:0;}
+body{
+  font-family:'inter',sans-serif; 
+  color:var(--text-color);
+  background-color: var(--bg-color);
+  line-height:2;
+  overflow-x:hidden;
+}
+
+
+
+
+
+
+
+
+/* contact */
+.contact_container{
+  max-width: 800px;
+  margin:0;
+  background:var(--card-bg);
+}
