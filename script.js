@@ -24,9 +24,31 @@ function getRepos(){
     const displayData = data.slice(0,6)
     //循环生成
     displayData.forEach(repo => {
+      //声明变量
       const card = document.createElement("div");
-      card.className = "card"
-      card.innerHTML = `<h3>${repo.name}</h3><p>${repo.description || ''}</p>`
+      card.classList.add("card");
+      const lang = repo.language || "Unknown";
+
+
+      card.innerHTML = `
+      <div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h3>${repo.name}</h3>
+      <a href="${repo.html_url}" target="_blank" style="color:#888">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <p>${repo.description ? repo.description.substring(0,60)+'...':"NO description"}</p>
+      </div>
+
+      <div class="card_title">
+
+      <div><span style="width:8px; height:8px; margin-right:4px;border-radius:50%;
+      display:inline-block; background:${languageColors[lang]||'#888'}"></span>${lang}</div>
+
+      <div>${repo.stargazers_count >0 ?`<i class="fa-regular fa-star"></i> ${repo.stargazers_count}`:''}</div>
+
+      </div>`;
+
       container.appendChild(card)
     })
   })

@@ -139,13 +139,50 @@ h2::before{
 
 
 /* project */
-project_grid{
+
+.project_grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,mimmax(280px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:18px;
 }
 
+.card{
+  background:var(--card-bg);
+  border:1px solid var(--border-color);
+  border-radius:12px;
+  padding:24px;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  transition:0.3s;
+  min-height:160px;
+}
 
+.card:hover{
+  border-color:#555;
+  transform:translateY(-3px);
+}
+
+.card h3{
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+.card p{
+  font-size:14px;
+  color:var(--secondary-color);
+  flex-grow:1;
+  margin-bottom:15px;
+}
+
+.card_title{
+  border-top:1px solid var(--border-color);
+  padding-top:10px;
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:var(--text-color);
+}
 
 
 
