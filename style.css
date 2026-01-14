@@ -18,6 +18,61 @@ body{
 }
 
 
+
+/* NAV */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 0;
+  background:rgba(8,8,0,0.8); 
+  backdrop-filter:bluer(10px);
+  z-index:100;
+  border-bottom:1px solid var(--border-color);
+}
+
+.nav_container{
+  max-width:1000px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 0 24px;
+}
+
+.logo{
+  font-weight:800;
+  font-size:24px;
+}
+
+.dot{
+  color:var(--primary-color);
+}
+
+.nav_links{
+  display:flex;
+  gap:24px;
+  list-style:none;
+}
+
+.nav_links a {
+  text-decoration:none;
+  color:var(--text-color);
+  font-size:14px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav_links a hover{
+  color:var(--text-color);
+}
+
+
+
+
+
+
+
 main{
   max-width:1000px;
   margin:0 auto;
@@ -53,6 +108,11 @@ h2::before{
   margin-bottom:10px;
   font-weight:600;
 }
+
+
+
+
+
 
 /* skills */
 .skills_grid{
