@@ -3,7 +3,7 @@
 const username = "Mosssi";
 const container = document.getElementById("github_container");
 const languageColors = {
-  "javaScript":"#f1e05a",
+  "JavaScript":"#f1e05a",
   "TypeScript":"#2b7489",
   "HTML":"#e34c26",
   "CSS":"#563d7c",
