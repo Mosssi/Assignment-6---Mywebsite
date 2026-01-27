@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brianna Fronntend Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav_container">
+      <div class="logo">Brianna</div>
+      <ul class="nav_links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="hero_content">
+        <h2>👋 Hi I am </h2>
+        <div class="hero_image">
+          <img src="profile.jpg" alt="Brianna's Portrat" style="width:80px; border-radius:50%;">
+        </div>
+        <h1>Brianna</h1>
+        <div class="typing">
+          <span>/</span>
+          <span class="typed" data-typed-items="Frontend Developer,Tech Enthusiast, UI/Ux">
+          </span>
+        </div>
+
+        <p>
+          Crafting robust and user-friendly web experiences with moern techologies.
+        </p>
+      </div>
+    </section>
+    
+    
+    <section id="skills">
+      <div class="section_header">
+        <h2>Skills</h2>
+      </div>
+
+      <!-- //skills skills_grid -->
+      <div class="skills_grid">
+        <div class="skill_card">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML5</span>
+        </div>
+
+
+        <div class="skill_card">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill_card">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill_card">
+          <i class="devicon-react-plain colored"></i>
+          <span>React</span>
+        </div>
+
+        <div class="skill_card">
+          <i class="devicon-tailwindcss-plain colored"></i>
+          <span>Tailwind CSS</span>
+        </div>
+
+        <div class="skill_card">
+          <i class="devicon-git-plain colored"></i>
+          <span>Git</span>
+        </div>
+
+        <div class="skill_card">
+          <i class="devicon-figma-plain colored"></i>
+          <span>Figma</span>
+        </div>
+
+        <div class="skill_card">
+          <i class="devicon-vscode-plain colored"></i>
+          <span>VS Code</span>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section id="experience">
+    <div class="section_header">
+      <h2>Experience & Education</h2>
+    </div>
+    <div class="timeline">
+      <div class="timelin_item">
+        <div class="timeline-data"></div>
+        <div class="timeline-content">
+          <h3>Frontend Developer Student</h3>
+          <h4>Futuregames</h4>
+          <ul>
+            <li>Learning advanced JavaScript,React , adn modern web development paractices. </li>
+            <li>Building real-world projects and collaborating with peers. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Project">
+    <div class="section_header">
+      <h2>Projects</h2>
+    </div>
+    <div id="github_container" class="project_grid"></div>
+  </section>
+
+
+  <!-- contact -->
+  <section id="contact" class="contact_container">
+    <div class="section_header">
+      <p class="sub_title">Get in Touch</p>
+      <h2>Let's Connect</h2>
+    </div>
+
+  <form class="contact_form">
+    <div class="form">
+      <label for="name">Your name <span class="required">*</span></label>
+      <input type="text" id="name" placeholder="What's your name?" required>
+    </div>
+
+    <div class="form">
+        <label for="email">Your email <span class="required">*</span></label>
+        <input type="email" id="email" placeholder="What's your email?" required> 
+    </div>
+       
+    <div class="form">
+      <label for="message">Your message</label>
+      <textarea id="message" rows="6" placeholder="What do you want to say?"></textarea>
+    </div>
+
+    <button type="submit" class="submit_btn">Send Message</button>
+  </form>
+  </section>
+
+
+
+  <footer class="footer">
+    <p>&copy;2027 Brianna.Designed & Built by Brianna</p>
+  </footer>
+  </main>
+</body>
+</html>

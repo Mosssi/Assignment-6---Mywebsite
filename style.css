@@ -26,7 +26,7 @@ body{
   width:100%;
   padding:15px 0;
   background:rgba(8,8,0,0.8); 
-  backdrop-filter:bluer(10px);
+  backdrop-filter:blur(10px);
   z-index:100;
   border-bottom:1px solid var(--border-color);
 }
@@ -228,7 +228,7 @@ input,textarea{
   font-size:16px;
   color:var(--text-color);
   font-family:inherit;
-  transition:al 0.3s ease;
+  transition:all 0.3s ease;
   outline:none;
 }
 
@@ -271,7 +271,7 @@ input:focus,textarea:focus{
 }
 
 
-@media(nmax-width:640px){
+@media(max-width:640px){
   .menu{
     padding:16px;
     display:flex;
