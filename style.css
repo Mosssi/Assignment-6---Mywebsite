@@ -256,6 +256,7 @@ input:focus,textarea:focus{
   cursor:pointer;
   transition:all 0.3 ease;
   margin-top:10px;
+  text-decoration:none;
 }
 
 .submit_btn:hover{

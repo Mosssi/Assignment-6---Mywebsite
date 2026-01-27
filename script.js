@@ -1,12 +1,16 @@
 if (document.querySelector('.typed')){
-  new Type('.typed',{
-    strings:
-    document.querySelector('.typed').getAttribute('data-typed-items'.split(',')),
-    typeSpeed:100,
-    backSpeed:50,
-    backDelay:2000,
-    loop:true
-  })
+  const typedElement = document.querySelector('.typed');
+  const typedAttribute = typedElement.getAttribute('data-typed-items');
+
+  if(typedAttribute){
+    new Typed('.typed',{
+      strings:typedAttribute.split(','),
+      typeSpeed:100,
+      backSpeed:50,
+      backDelay:2000,
+      loop:true
+    })
+  }
 }
 
 
@@ -33,7 +37,7 @@ if(container){
     return response.json()
   })
   .then(data => {
-    date.sort((a,b)=>new Data(b.updated_at)-new
+    data.sort((a,b)=>new Date(b.updated_at)-new
   Date(a.updated_at))
     const displayData = data.slice(0,6)
     //循环生成
@@ -43,21 +47,22 @@ if(container){
       card.classList.add("card");
       const lang = repo.language || "Unknown";
 
-      const demoLink =repo.homepage
-      ?`<a href = ${repo.homepage}"target="_blank"
+      const demoLink =repo.homepage?
+      `<a href = "${repo.homepage}"
+      target="_blank"
       style="margin-right:15px;
       color:var(--text-color);
       font-size:14px;
-      text-decoration:uderline;">
-      Demo</a>`
-      :'';
+      text-decoration:underline;">
+      Demo</a>`:
+      '';
 
       card.innerHTML = `
       <div>
       <div style="display:flex; justify-content:space-between; align-items:center;">
       <h3>${repo.name}</h3>
       <div>
-      ${demoLink}<a href="${repo.html,url}" target="_blank"
+      ${demoLink}<a href="${repo.html_url}" target="_blank"
       style="color:#888"
       aria-label="GitHub Code">
       <i class="fa-solid fa-code"></i>
